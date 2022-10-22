@@ -295,8 +295,10 @@ h2{
 main{
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #FFFFFF 26.04%, #9B6750 67.19%, #152A3E 91.15%);
   overflow-x: hidden;
+}
+.gradient{
+  background: linear-gradient(180deg, #FFFFFF 26.04%, #9B6750 67.19%, #152A3E 91.15%);
 }
 
 .contentContainer{
@@ -336,7 +338,7 @@ p{
 .scroll-down{
   color:rgba(47, 52, 70, 0.4);
   text-transform:uppercase;
-  padding-top:40%;
+  padding-top:60%;
 }
 #num5 h2,
 #num4 h2{
@@ -370,7 +372,15 @@ button{
   font-size:2rem;
   font-weight:bold;
   letter-spacing:.5rem;
+  transition:all ease-in-out .3s;
 }
+
+button:hover{
+  background:#D49860;
+  color:#152A3E;
+  cursor: pointer;
+}
+
 .icon-holder img{
   position:absolute;
 }
@@ -385,5 +395,28 @@ button{
 }
 #rehearsal{
   left:3.5rem;
-  top:4.2rem;
+  top:4rem;
+}
+#checkin{
+  left:5.5rem;
+  top:2.5rem;
+}
+#venue{
+  left:2.5rem;
+  top:1.5rem;
+}
+
+/* Location Selector
+ */
+
+.locationContainer{
+  display:grid;
+}
+.location{
+  display:inline-block;
+  width:8rem;
+  height:8rem;
+  border:2px solid #D49860;
+  border-radius:50%;
+
 }
