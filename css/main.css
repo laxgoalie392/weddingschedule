@@ -410,13 +410,24 @@ button:hover{
  */
 
 .locationContainer{
-  display:grid;
 }
 .location{
   display:inline-block;
-  width:8rem;
-  height:8rem;
+  width:12rem;
+  height:12rem;
   border:2px solid #D49860;
   border-radius:50%;
-
+  font-family: "Abril Fatface";
+  margin:0 -1rem;
+  color:#D49860;
+  font-size: 1.5rem;
+  line-height: 12rem;
+}
+.location:hover{
+  background:#D49860;
+  color:#FFFFFF;
+  transition: all ease-in-out .3s;
+}
+a{
+  text-decoration:none;
 }
