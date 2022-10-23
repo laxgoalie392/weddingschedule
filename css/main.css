@@ -301,6 +301,10 @@ main{
   background: linear-gradient(180deg, #FFFFFF 26.04%, #9B6750 67.19%, #152A3E 91.15%);
 }
 
+#saturday .gradient{
+  background: linear-gradient(180deg, #FFFFFF 26.04%, #D5E7F3 67.19%, #517BA3 91.15%);
+}
+
 .contentContainer{
   max-width:25rem;
   margin:0 auto;
@@ -333,6 +337,7 @@ p{
   font-family: "Neutra Text";
   color:rgba(47, 52, 70, 0.6);
   margin-bottom:4rem;
+  font-size:1.3rem;
 }
 
 .scroll-down{
@@ -414,9 +419,25 @@ button:hover{
   left:2.6rem;
   top:6rem;
 }
+#retie{
+  left:2.5rem;
+  top:5.6rem;
+}
 #camera{
   left:3.2rem;
   top:4.5rem;
+}
+#shenanigans{
+  left:4.1rem;
+  top:3rem;
+}
+#makeup{
+  left:6.5rem;
+  top:2.5rem;
+}
+#shuttle{
+  left:2.7rem;
+  top:5rem;
 }
 
 /* Location Selector
