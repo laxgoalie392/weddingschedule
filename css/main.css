@@ -406,6 +406,19 @@ button:hover{
   top:1.5rem;
 }
 
+#sun{
+  left:1.6rem;
+  top:1.6rem;
+}
+#tie{
+  left:2.6rem;
+  top:6rem;
+}
+#camera{
+  left:3.2rem;
+  top:4.5rem;
+}
+
 /* Location Selector
  */
 
