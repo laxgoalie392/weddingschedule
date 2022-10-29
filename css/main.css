@@ -291,6 +291,15 @@ h2{
   font-size:3rem;
   margin:1rem;
 }
+h3{
+  font-family: "Neutra Text";
+  font-size:1.5rem;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  text-transform:uppercase;
+  color:#fff;
+  margin-top:2rem;
+}
 
 main{
   display: flex;
@@ -398,7 +407,7 @@ button:hover{
   left:2rem;
   bottom:1.8rem;
 }
-#rehearsal{
+#pergola{
   left:3.5rem;
   top:4rem;
 }
@@ -464,4 +473,202 @@ button:hover{
 }
 a{
   text-decoration:none;
+}
+/* FAB Menu */
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 300;
+  cursor: pointer;
+}
+
+
+.navigation__background {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: #D49860;
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
+  z-index: 200;
+  transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__list {
+  /*@include center;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  font-size: 2.4rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.navigation__link span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.navigation__link:hover {
+  color: #D49860;
+  transform: scale(1.1);
+}
+
+.navigation__checkbox:checked~.navigation__background {
+  transform: scale(80)
+}
+
+.navigation__checkbox:checked~.navigation__nav {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation__icon {
+  background: url("../img/share-photos.svg");
+  position: relative;
+  margin-top: 1rem;
+  height:2rem;
+  width:2rem;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: all 200ms;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon {
+  background: url("../img/close-photos.svg");
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+.nav-content{
+  margin-top:30%;
+}
+.nav-content button{
+  border-color:#2F3446;
+  color:#2F3446;
+  margin-top:30%;
+}
+.nav-content button:hover{
+  background:#2F3446;
+  color:#D49860;
+}
+.wedding-party{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 48px;
+  padding-top:2rem;
+}
+.team-groom{
+  text-align:right;
+}
+.team-bride{
+  text-align: left;
+}
+.wedding-party h2{
+  margin:0;
+  padding-bottom:1rem;
+}
+h4{
+  font-family: "Abril Fatface";
+  font-size:1.25rem;
+  color:#2F3446;
+  padding:0;
+  margin:0;
+}
+.h4-underline{
+  font-family: "Neutra Text";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color:#8a8a8a;
+}
+.person{
+  margin:2rem 0;
+}
+
+.bridegroom .location{
+  font-size:2.2rem;
+}
+.address{
+  font-family: "Abril Fatface";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  line-height: 1.5;
+  color:#D49860;
+  margin-top:4rem;
+}
+#cocktail{
+  left:4.9rem;
+  top:3rem;
+}
+#dance{
+  left:3.8rem;
+  top:4.8rem;
+}
+#reception{
+  left:3.5rem;
+  top:3.8rem;
 }

@@ -30,11 +30,25 @@
 </head>
 
 <body>
+<div class="navigation">
+  <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="navigation__button">
+    <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+  </label>
+  <div class="navigation__background"></div>
+  <nav class="navigation__nav" role="navigation">
+    <div class="nav-content contentContainer">
+      <h2>Everyone with a smart phone is a photographer</h2>
+      <h3>Share your photos in our google album</h3>
+      <button onclick="window.location.href='https://photos.app.goo.gl/4xqGJhXxUoWJM2MG7','_blank';">Tap Here ↣</button>
+    </div>
+  </nav>
+</div>
 <main class="gradient">
   <div class="contentContainer gradient">
     <section class="page" id="num1">
       <h1>Friday</h1>
-      <div class="page-subtitle">Nov 5th</div>
+      <div class="page-subtitle">Nov 4th</div>
       <p class="scroll-down">⇣ Scroll Down ⇣</p>
     </section>
     <section class="page" id="num1.5">
@@ -55,10 +69,10 @@
       <h2>Check-in</h2>
       <p class="description">For those who are staying at the inn.</p>
     </section>
-    <section class="page" id="num3">
+    <section class="page double" id="num3">
       <div class="icon-holder">
         <div class="circle"></div>
-        <img src="../img/pergola.svg" id="rehearsal" >
+        <img src="../img/pergola.svg" id="pergola" >
       </div>
       <div class="h2-overline">5.30pm</div>
       <h2>Ceremony Rehearsal</h2>
