@@ -355,9 +355,11 @@ p{
   padding-top:60%;
 }
 #num5 h2,
-#num4 h2{
+#num4 h2,
+#num6 h2{
   color:#fff;
 }
+#num6 p,
 #num5 p,
 #num4 p{
   color:rgba(255,255,255,.8);
